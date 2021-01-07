@@ -14,16 +14,14 @@ public class Solution {
         }
         int flag = 0;
         long ans = 0; // 最终返回的结果
-        boolean flag1 = false;
         while (index < len) {
             // "3-2"
-            if (!flag1 && (str.charAt(index) == '-' || str.charAt(index) == '+')) {
+            if (str.charAt(index) == '-' || str.charAt(index) == '+') {
                 if (flag != 0) {
                     return 0; // "-123-3", 第二个-号是非法字符， 返回0
                 }
                 flag = str.charAt(index) == '-' ? -1 : 1;
             } else if (str.charAt(index) >= '0' && str.charAt(index) <= '9') {
-                flag1 =true;
                 ans = ans * 10 + str.charAt(index )  -'0'; // "-123"
                 if (judge(ans, flag)) { // 对ans是否溢出int类型做下判断
                     return 0;
