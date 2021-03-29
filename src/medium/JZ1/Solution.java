@@ -1,4 +1,4 @@
-package hard.JZ1;
+package medium.JZ1;
 
 public class Solution {
     //暴力法
