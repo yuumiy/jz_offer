@@ -1,21 +1,39 @@
 package easy.JZ6;
 
-import java.util.Stack;
 
 public class Solution {
-    Stack<Integer> stack1 = new Stack<Integer>();
-    Stack<Integer> stack2 = new Stack<Integer>();
+    //暴力解法
+    /*public int minNumberInRotateArray(int [] array) {
+        if (array.length == 0) {
+            return 0;
+        }
+        int ans = array[0];
+        for (int i = 1; i < array.length; i++) {
+            ans=Math.min(ans,array[i]);
+        }
+        return ans;
+    }*/
 
-    public void push(int node) {
-        stack1.push(node);
+    //通过二分的方法
+    public static int minNumberInRotateArray(int [] array) {
+        if(array.length==0)
+            return 0;
+        int l=0;
+        int r=array.length-1;
+        while(l<r){
+            int mid=(l+r)>>1;
+            if(array[mid]>array[r])
+                l=mid+1;
+            else if(array[mid]<array[r])
+                r=mid;
+            else
+                r--;
+        }
+        return array[r];
     }
 
-    public int pop() {
-        if(stack2.size()==0){
-            while(stack1.size()!=0){
-                stack2.push(stack1.pop());
-            }
-        }
-        return stack2.pop();
+    public static void main(String[] args) {
+        int[] array={3,4,5,1,2};
+        System.out.println(minNumberInRotateArray(array));
     }
 }

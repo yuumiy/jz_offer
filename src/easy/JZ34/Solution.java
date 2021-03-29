@@ -1,4 +1,4 @@
-package hard.JZ34;
+package easy.JZ34;
 
 import java.util.*;
 public class Solution {

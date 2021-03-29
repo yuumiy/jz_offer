@@ -1,4 +1,4 @@
-package medium.JZ50;
+package easy.JZ50;
 
 import java.util.*;
 

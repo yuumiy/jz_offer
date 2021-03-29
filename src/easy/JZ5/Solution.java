@@ -1,21 +1,21 @@
 package easy.JZ5;
 
-import java.util.Scanner;
+import java.util.Stack;
 
 public class Solution {
-    public int Fibonacci(int n) {
-        if(n==0)
-            return 0;
-        if(n==1)
-            return 1;
-        int one=0;
-        int two=1;
-        int sum=0;
-        for(int i=2;i<=n;i++){
-            sum=one+two;
-            one=two;
-            two=sum;
+    Stack<Integer> stack1 = new Stack<Integer>();
+    Stack<Integer> stack2 = new Stack<Integer>();
+
+    public void push(int node) {
+        stack1.push(node);
+    }
+
+    public int pop() {
+        if(stack2.size()==0){
+            while(stack1.size()!=0){
+                stack2.push(stack1.pop());
+            }
         }
-        return sum;
+        return stack2.pop();
     }
 }
