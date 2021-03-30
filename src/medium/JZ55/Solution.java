@@ -2,16 +2,17 @@ package medium.JZ55;
 
 import java.util.*;
 
-class ListNode {
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class Solution {
+    public class ListNode {
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     public ListNode EntryNodeOfLoop(ListNode pHead)
     {
         if(pHead==null)
