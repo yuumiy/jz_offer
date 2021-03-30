@@ -2,15 +2,15 @@ package medium.JZ26;
 
 import java.util.*;
 
-class TreeNode{
-    int val;
-    TreeNode left=null;
-    TreeNode right=null;
-    public TreeNode(int val){
-        this.val=val;
-    }
-}
 public class Solution {
+    public class TreeNode{
+        int val;
+        TreeNode left=null;
+        TreeNode right=null;
+        public TreeNode(int val){
+            this.val=val;
+        }
+    }
     public TreeNode Convert(TreeNode pRootOfTree) {
         if(pRootOfTree==null)
             return null;

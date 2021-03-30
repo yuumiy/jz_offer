@@ -1,17 +1,18 @@
 package hard.JZ61;
 
 import java.util.*;
-class TreeNode {
-    int val = 0;
-    TreeNode left = null;
-    TreeNode right = null;
 
-    public TreeNode(int val) {
-        this.val = val;
-
-    }
-}
 public class Solution {
+    public class TreeNode {
+        int val = 0;
+        TreeNode left = null;
+        TreeNode right = null;
+
+        public TreeNode(int val) {
+            this.val = val;
+
+        }
+    }
     String Serialize(TreeNode root) {
         StringBuilder ans = new StringBuilder("[");
         Queue<TreeNode> queue = new LinkedList<>();
