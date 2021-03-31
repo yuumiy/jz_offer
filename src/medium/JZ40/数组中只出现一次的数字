@@ -8,3 +8,4 @@
     collection添加元素是add，map添加元素是put
     两者删除元素都是remove
     list.remove传入的是下标，set.remove直接传入元素
+    list和set都是contains方法，map是containsKey方法

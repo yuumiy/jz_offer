@@ -1,4 +1,4 @@
-package hard.JZ29;
+package medium.JZ29;
 
 import java.util.*;
 public class Solution {
@@ -22,12 +22,12 @@ public class Solution {
             int baseNum = num[lo];
 
             while(right > left) {
-                //第二步：右边指针找到小于基准数的就停下
+                //第二步：右边指针找到大于基准数的就停下
                 while(num[right] >= baseNum && right > left) {
                     right--;
                 }
 
-                //第二步：左边指针找到大于基准数的就停下
+                //第二步：左边指针找到小于基准数的就停下
                 while(num[left] <= baseNum && right > left) {
                     left++;
                 }

@@ -1,15 +1,16 @@
-package hard.JZ14;
+package medium.JZ14;
 
 import java.util.*;
-class ListNode {
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 public class Solution {
+    public class ListNode {
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     public ListNode FindKthToTail(ListNode head,int k) {
         Stack<ListNode> stack=new Stack<>();
         ListNode node=null;

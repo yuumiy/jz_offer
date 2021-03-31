@@ -11,7 +11,7 @@ public class Solution {
     }
     public ListNode Merge(ListNode list1,ListNode list2){
         ListNode headNode=new ListNode(0);
-        ListNode moveNode=headNode; //moveNode是headNode的引用
+        ListNode moveNode=headNode; //moveNode是headNode的引用,改变moveNode，headNode也会对应改变
         while(list1!=null&&list2!=null){
             if(list1.val<list2.val){
                 moveNode.next=list1;
