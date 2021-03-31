@@ -3,7 +3,7 @@ package medium.JZ40;
 import java.util.*;
 public class Solution {
     public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) {
-        HashSet<Integer> set=new HashSet<>();
+        TreeSet<Integer> set=new TreeSet<>();
         for (Integer a : array) {
             if(set.contains(a)){
                 set.remove(a);

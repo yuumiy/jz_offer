@@ -1,4 +1,4 @@
-package hard.JZ65;
+package medium.JZ65;
 
 public class Solution {
     public boolean hasPath(char[] matrix, int rows, int cols, char[] str){

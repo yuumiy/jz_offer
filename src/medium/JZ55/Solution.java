@@ -2,8 +2,6 @@ package medium.JZ55;
 
 import java.util.*;
 
-
-
 public class Solution {
     public class ListNode {
         int val;

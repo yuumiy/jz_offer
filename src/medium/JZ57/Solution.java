@@ -1,20 +1,20 @@
 package medium.JZ57;
 
 import java.util.*;
-class TreeLinkNode {
-    int val;
-    TreeLinkNode left = null;
-    TreeLinkNode right = null;
-    //指向父亲结点的指针
-    TreeLinkNode next = null;
-
-    TreeLinkNode(int val) {
-        this.val = val;
-    }
-}
 
 public class Solution {
-    private List<TreeLinkNode> list=new ArrayList<>();
+    public class TreeLinkNode {
+        int val=0;
+        TreeLinkNode left = null;
+        TreeLinkNode right = null;
+        //指向父亲结点的指针
+        TreeLinkNode next = null;
+
+        TreeLinkNode(int val) {
+            this.val = val;
+        }
+    }
+    public List<TreeLinkNode> list=new ArrayList<>();
     public TreeLinkNode GetNext(TreeLinkNode pNode)
     {
         TreeLinkNode node=pNode;

@@ -2,13 +2,17 @@ package medium.JZ54;
 
 import java.util.*;
 public class Solution {
-    private Map<Character,Integer> map=new HashMap<>();
-    private StringBuffer str=new StringBuffer();
-    private int index=0;
+    public Map<Character,Integer> map=new HashMap<>();
+    public StringBuffer str=new StringBuffer();
+    public int index=0;
     public void Insert(char ch)
     {
         str.append(ch);
-        map.put(ch,map.getOrDefault(ch,0)+1);
+        if(map.containsKey(ch)){
+            map.put(ch,map.get(ch)+1);
+        }else {
+            map.put(ch,1);
+        }
     }
 
     public char FirstAppearingOnce()

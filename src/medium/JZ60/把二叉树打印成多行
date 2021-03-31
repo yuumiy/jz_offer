@@ -7,3 +7,4 @@ stack、queue都是集合
 2、利用队列模拟广度优先搜索，有设置一个size，这个很巧妙，也在一个while循环中
 深度优先搜索类似于二叉树的前序遍历
 3、以后命名可以用res、list、total等等，不要取得太长太复杂
+4、创建queue使用linkedList

@@ -7,4 +7,5 @@
 思路：
 1、我们使用Arraylist存储数据，然后使用工具类对集合进行排序，就可以找出中位数了
 2、set集合没有get()方法，因为它是无序的。它有contains方法，判断集合中是否有某个元素
+3、Collections.sort(list)，可以对list按字典顺序排序
 
