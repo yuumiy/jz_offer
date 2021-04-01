@@ -1,17 +1,17 @@
 package hard.JZ25;
 
 import java.util.*;
-class RandomListNode {
-    int label;
-    RandomListNode next = null;
-    RandomListNode random = null;
-
-    RandomListNode(int label) {
-        this.label = label;
-    }
-}
 
 public class Solution {
+    public class RandomListNode {
+        int label;
+        RandomListNode next = null;
+        RandomListNode random = null;
+
+        RandomListNode(int label) {
+            this.label = label;
+        }
+    }
     public RandomListNode Clone(RandomListNode pHead) {
         Map<RandomListNode,RandomListNode> map=new HashMap<>();
         RandomListNode node=pHead;

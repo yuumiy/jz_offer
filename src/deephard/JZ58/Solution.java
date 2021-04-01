@@ -1,4 +1,4 @@
-package hard.JZ58;
+package deephard.JZ58;
 
 public class Solution {
     public class TreeNode {

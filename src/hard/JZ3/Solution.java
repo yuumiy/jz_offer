@@ -1,16 +1,16 @@
 package hard.JZ3;
 
 import java.util.*;
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 
 public class Solution {
+    public class ListNode {
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> list=new ArrayList<>();
         Stack<ListNode> stack=new Stack<>();

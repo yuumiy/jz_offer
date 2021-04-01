@@ -2,7 +2,7 @@ package hard.JZ44;
 
 public class Solution {
     public String ReverseSentence(String str) {
-        StringBuffer sb=new StringBuffer("");
+        StringBuffer sb=new StringBuffer();
         if(str.length()<0||str.trim().equals(""))
             return str;
         String[] strs=str.split(" ");

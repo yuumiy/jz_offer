@@ -1,4 +1,4 @@
-package hard.JZ35;
+package deephard.JZ35;
 
 public class Solution {
     private long sum; // 用来去统计逆序对的个数

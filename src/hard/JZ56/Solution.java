@@ -1,15 +1,16 @@
 package hard.JZ56;
 
 import java.util.*;
-class ListNode {
-    int val;
-    ListNode next = null;
 
-    ListNode(int val) {
-        this.val = val;
-    }
-}
 public class Solution {
+    public class ListNode {
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     private ListNode change(ListNode x) {
         int temp = x.val;
         while (x != null && x.val == temp) {

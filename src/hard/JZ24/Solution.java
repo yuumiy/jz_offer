@@ -1,18 +1,18 @@
 package hard.JZ24;
 
 import java.util.*;
-class TreeNode {
-    int val = 0;
-    TreeNode left = null;
-    TreeNode right = null;
 
-    public TreeNode(int val) {
-        this.val = val;
-
-    }
-
-}
 public class Solution {
+    public class TreeNode {
+        int val = 0;
+        TreeNode left = null;
+        TreeNode right = null;
+
+        public TreeNode(int val) {
+            this.val = val;
+
+        }
+    }
     public void find(TreeNode root,int target,ArrayList<ArrayList<Integer>> result,ArrayList<Integer> path){
         //递归终止条件
         if(root==null)

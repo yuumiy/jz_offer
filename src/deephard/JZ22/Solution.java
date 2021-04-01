@@ -1,4 +1,4 @@
-package hard.JZ22;
+package deephard.JZ22;
 
 import java.util.*;
 public class Solution {
